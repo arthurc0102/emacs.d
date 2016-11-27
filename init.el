@@ -8,8 +8,12 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (add-to-list 'load-path "~/.emacs.d/custom")
+(add-to-list 'load-path "~/.emacs.d/packages")
 ;; require .el
 (require 'highlight-indentation)
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
 (setq js-indent-level 2)
 
 
