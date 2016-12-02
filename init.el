@@ -14,6 +14,12 @@
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
+;; switch windows key set
+(global-set-key (kbd "M-s") 'windmove-up)
+(global-set-key (kbd "M-x") 'windmove-down)
+(global-set-key (kbd "M-z") 'windmove-left)
+(global-set-key (kbd "M-c") 'windmove-right)
+
 (setq js-indent-level 2)
 
 
