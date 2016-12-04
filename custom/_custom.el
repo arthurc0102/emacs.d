@@ -18,6 +18,9 @@
 (set-default-font "Inconsolata 24")
 ;;(set-default-font "Consolas 22")
 
+;; 設定行距
+(setq-default line-spacing 10)
+
 ;; 開始就最大化
 (defun toggle-fullscreen ()
   (interactive)
