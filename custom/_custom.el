@@ -19,7 +19,7 @@
 ;;(set-default-font "Consolas 22")
 
 ;; 設定行距
-(setq-default line-spacing 10)
+(setq-default line-spacing 5)
 
 ;; 開始就最大化
 (defun toggle-fullscreen ()
@@ -35,6 +35,6 @@
 ;; hide the startup message
 (setq inhibit-startup-message t)
 ;; load material theme
-(load-theme 'material t) 
+(load-theme 'material t)
 ;;設定行號於左側
 (global-linum-mode 1)
