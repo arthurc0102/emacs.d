@@ -9,8 +9,11 @@
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (add-to-list 'load-path "~/.emacs.d/custom")
 (add-to-list 'load-path "~/.emacs.d/packages/neotree")
+
 ;; require .el
 (require 'highlight-indentation)
+
+;; neotree setting
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
@@ -20,6 +23,7 @@
 (global-set-key (kbd "M-Z") 'windmove-left)
 (global-set-key (kbd "M-C") 'windmove-right)
 
+;; set indent-level of javascript
 (setq js-indent-level 2)
 
 
@@ -29,7 +33,7 @@
 (load "_gkey.el")
 (load "_autopair.el")
 (load "_highlight-indentation.el")
-;(load "_lisp.el")
+(load "_lisp.el")
 (load "_python.el")
 (load "_ruby.el")
 (load "_web-mode.el")
