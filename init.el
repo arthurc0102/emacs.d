@@ -37,6 +37,7 @@
 (load "_python.el")
 (load "_ruby.el")
 (load "_web-mode.el")
+(load "_markdown.el")
 
 
 (fset 'reload-buffer
