@@ -11,7 +11,8 @@
   (package-refresh-contents))
 
 (defvar myPackages
-  '(better-defaults
+  '(use-package
+    better-defaults
     ein
     elpy
     flycheck
@@ -35,7 +36,7 @@
       (package-install package)))
       myPackages)
 
-; markdoen mode
+; markdown mode
 (use-package markdown-mode
   :ensure t
   :commands (markdown-mode gfm-mode)
