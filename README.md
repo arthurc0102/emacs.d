@@ -4,7 +4,7 @@
 
 * python package
 
-  1. flake8
-  2. pep8
-  3. epc
-  4. jedi
+  * flake8
+  * pep8
+  * epc
+  * jedi
