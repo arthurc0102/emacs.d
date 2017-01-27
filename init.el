@@ -17,6 +17,13 @@
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
+;; multiple-cursors setting
+(require 'multiple-cursors)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
 ;; switch windows key set
 (global-set-key (kbd "M-S") 'windmove-up)
 (global-set-key (kbd "M-X") 'windmove-down)

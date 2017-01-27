@@ -29,6 +29,7 @@
     enh-ruby-mode
     inf-ruby
     web-mode
+    multiple-cursors
     ))
 
 (mapc #'(lambda (package)
