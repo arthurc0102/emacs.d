@@ -12,27 +12,8 @@
 
 ;; require .el
 (require 'highlight-indentation)
-
-;; neotree setting
 (require 'neotree)
-(global-set-key [f8] 'neotree-toggle)
-
-;; multiple-cursors setting
 (require 'multiple-cursors)
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
-
-;; switch windows key set
-(global-set-key (kbd "M-S") 'windmove-up)
-(global-set-key (kbd "M-X") 'windmove-down)
-(global-set-key (kbd "M-Z") 'windmove-left)
-(global-set-key (kbd "M-C") 'windmove-right)
-
-;; set indent-level of javascript
-(setq js-indent-level 2)
-
 
 ;; LOAD file
 (load "_package.el")
@@ -45,10 +26,8 @@
 (load "_ruby.el")
 (load "_web-mode.el")
 (load "_markdown.el")
-
-
-(fset 'reload-buffer
-      (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([24 98 return 24 98 return] 0 "%d")) arg)))
+(load "_time.el")
+(load "_reload-buffer.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -65,20 +44,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-;; Display time
-(defface egoge-display-time
-  '((((type x w32 mac))
-     ;; #060525 is the background colour of my default face.
-     (:foreground "#FFFFFF" :inherit bold))
-    (((type tty))
-     (:foreground "write")))
-  "Face used to display the time in the mode line.")
-
-;; This causes the current time in the mode line to be displayed in
-;; `egoge-display-time-face' to make it stand out visually.
-(setq display-time-string-forms
-      '((propertize (concat " " 24-hours ":" minutes " ")
- 		    'face 'egoge-display-time)))
-
-(display-time-mode 1)
