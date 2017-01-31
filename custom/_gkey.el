@@ -13,10 +13,10 @@
 (define-key global-map (kbd "C-c o") 'iedit-mode)
 
 ;; buffer move - mode1
-;; (global-set-key (kbd "C-<left>")  'windmove-left)
-;; (global-set-key (kbd "C-<right>") 'windmove-right)
-;; (global-set-key (kbd "C-<up>")    'windmove-up)
-;; (global-set-key (kbd "C-<down>")  'windmove-down)
+(global-set-key (kbd "C-<left>")  'windmove-left)
+(global-set-key (kbd "C-<right>") 'windmove-right)
+(global-set-key (kbd "C-<up>")    'windmove-up)
+(global-set-key (kbd "C-<down>")  'windmove-down)
 
 ;; buffer move - mode2
 (global-set-key (kbd "M-S") 'windmove-up)
