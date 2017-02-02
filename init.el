@@ -28,6 +28,7 @@
 (load "_markdown.el")
 (load "_time.el")
 (load "_reload-buffer.el")
+(load "_javascript.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
