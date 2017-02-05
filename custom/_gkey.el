@@ -1,11 +1,3 @@
-;;設定到文件最上方和最下方的ＫＥＹ
-;(global-set-key (kbd "<C-S-iso-lefttab>") 'beginning-of-buffer)
-;(global-set-key (kbd "<C-tab>") 'end-of-buffer)
-
-
-;(global-set-key (kbd "<M-up>") 'beginning-of-buffer)
-;(global-set-key (kbd "<M-down>") 'end-of-buffer)
-
 ;; magit key set
 (global-set-key (kbd "C-x G") 'magit-status)
 
@@ -32,3 +24,9 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+;; move line key set
+(global-set-key (kbd "M-p") 'move-line-up)
+(global-set-key (kbd "M-n") 'move-line-down)
+(global-set-key (kbd "M-<up>") 'move-line-up)
+(global-set-key (kbd "M-<down>") 'move-line-down)

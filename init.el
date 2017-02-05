@@ -16,19 +16,22 @@
 (require 'multiple-cursors)
 
 ;; LOAD file
+; from custom folder
 (load "_package.el")
 (load "_custom.el")
 (load "_gkey.el")
 (load "_autopair.el")
 (load "_highlight-indentation.el")
-;; (load "_lisp.el")
 (load "_python.el")
 (load "_ruby.el")
 (load "_web-mode.el")
 (load "_markdown.el")
 (load "_time.el")
-(load "_reload-buffer.el")
 (load "_javascript.el")
+; from lisp folder
+(load "reload-buffer.el")
+(load "move-line.el")
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
