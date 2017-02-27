@@ -38,3 +38,5 @@
 (load-theme 'material t)
 ;;設定行號於左側
 (global-linum-mode 1)
+;; 顯示選取的行
+(global-hl-line-mode 1)
