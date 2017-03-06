@@ -10,11 +10,6 @@
 (add-to-list 'load-path "~/.emacs.d/custom")
 (add-to-list 'load-path "~/.emacs.d/packages/neotree")
 
-;; require .el
-(require 'highlight-indentation)
-(require 'neotree)
-(require 'multiple-cursors)
-
 ;; LOAD file
 ; from custom folder
 (load "_package.el")
@@ -31,6 +26,11 @@
 ; from lisp folder
 (load "reload-buffer.el")
 (load "move-line.el")
+
+;; require .el
+(require 'highlight-indentation)
+(require 'neotree)
+(require 'multiple-cursors)
 
 
 (custom-set-variables
