@@ -2,7 +2,7 @@
 ;; --------------------------------------
 
 (elpy-enable)
-(elpy-use-ipython)
+;; (elpy-use-ipython)
 
 ;; use flycheck not flymake with elpy
 (when (require 'flycheck nil t)
@@ -20,13 +20,13 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 
-(setq jedi:server-command '("/home/arthur/.emacs.d/elpa/jedi-core-20160709.722/jediepcserver.py"))
+(setq jedi:server-command '("/Users/arthur/.emacs.d/elpa/jedi-core-20170121.610/jediepcserver.py"))
 
 ;; use python3.5
-(setq python-python-command "/usr/bin/python3")
+(setq python-python-command "/usr/local/bin/python3.6")
 
 (defun python-shell-parse-command ()
   "Return the string used to execute the inferior Python process."
-  "/usr/bin/python3 -i"
+  "/usr/local/bin/python3.6 -i"
   )
 (setq python-shell-completion-native-enable nil)
