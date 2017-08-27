@@ -15,7 +15,7 @@
 
 ;; 設定文字
 ;; (set-default-font "-WenQ-文泉驛等寬正黑-normal-normal-normal-*-30-*-*-*-*-0-iso10646-1")
-(set-default-font "Inconsolata 18")
+(set-default-font "Inconsolata 12")
 ;; (set-default-font "Consolas 22")
 
 ;; 設定行距
@@ -40,3 +40,7 @@
 (global-linum-mode 1)
 ;; 顯示選取的行
 (global-hl-line-mode 1)
+;; Disable menu bar
+(menu-bar-mode -1)
+;; Disable tool bar
+(tool-bar-mode -1)
