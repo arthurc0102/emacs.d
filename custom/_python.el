@@ -20,7 +20,7 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 
-(setq jedi:server-command '("/Users/arthur/.emacs.d/elpa/jedi-core-20170121.610/jediepcserver.py"))
+(setq jedi:server-command '("~/.emacs.d/elpa/jedi-core-20170121.610/jediepcserver.py"))
 
 ;; use python3.5
 (setq python-python-command "/usr/local/bin/python3.6")

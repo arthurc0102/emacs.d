@@ -16,7 +16,7 @@
 ;; 設定文字
 ;; (set-default-font "-WenQ-文泉驛等寬正黑-normal-normal-normal-*-30-*-*-*-*-0-iso10646-1")
 ;; (set-default-font "Inconsolata 18")
-(set-default-font "Consolas 22")
+(set-default-font "Consolas 14")
 
 ;; 設定行距
 (setq-default line-spacing 5)
@@ -29,14 +29,19 @@
   (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
         '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0))
   )
+
 ;; if is GUI then max windows
 ;; (when window-system
 ;;     (toggle-fullscreen))
+
 ;; hide the startup message
 (setq inhibit-startup-message t)
+
 ;; load material theme
 (load-theme 'material t)
+
 ;;設定行號於左側
 (global-linum-mode 1)
+
 ;; 顯示選取的行
 (global-hl-line-mode 1)
