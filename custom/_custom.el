@@ -45,3 +45,9 @@
 
 ;; 顯示選取的行
 (global-hl-line-mode 1)
+
+;; Disable menu bar
+(menu-bar-mode -1)
+
+;; Disable tool bar
+(tool-bar-mode -1)
