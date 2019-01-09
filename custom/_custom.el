@@ -16,7 +16,7 @@
 ;; 設定文字
 ;; (set-default-font "-WenQ-文泉驛等寬正黑-normal-normal-normal-*-30-*-*-*-*-0-iso10646-1")
 ;; (set-default-font "Inconsolata 18")
-(set-default-font "Consolas 14")
+(set-default-font "Source Code Pro 14")
 
 ;; 設定行距
 (setq-default line-spacing 5)
