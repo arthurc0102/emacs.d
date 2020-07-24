@@ -28,3 +28,6 @@
 
 ;; Remove trailing newlines and spaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; Move backup file to one path
+(setq backup-directory-alist '(("" . "~/.emacs.d/backup")))
