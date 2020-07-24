@@ -1,5 +1,12 @@
+;; Toolbar config
+(tool-bar-mode -1)
+
+;; Hide menu bar at no window mode
+(unless (display-graphic-p)
+   (menu-bar-mode -1))
+
 ;; Full screen at start
-(toggle-frame-fullscreen)
+(toggle-frame-maximized)
 
 ;; Font setting
 

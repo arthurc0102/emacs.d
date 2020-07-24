@@ -1,5 +1,14 @@
-# Tmp file
 *~
+
+.lsp-session-v1
+
+/language-server/*
+!/language-server/setup.sh
+
+/transient
+/snippets
+
+/elpy
 
 # Elisp byte code
 *.elc

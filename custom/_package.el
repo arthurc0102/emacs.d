@@ -33,6 +33,9 @@
     magit  ;; Git
 
     ;; --- Python ---
+    ein      ;; iPython
+    elpy     ;; Emacs Python Development Environment.
+    py-yapf  ;; Yapf support
     ))
 
 (mapc #'(lambda (package)
