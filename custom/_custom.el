@@ -9,6 +9,7 @@
 (toggle-frame-maximized)
 
 ;; Font setting
+(set-default-font "Cascadia Code PL 12")
 
 ;; Hide the startup message
 (setq inhibit-startup-message t)
@@ -24,3 +25,6 @@
 
 ;; Flycheck
 (global-flycheck-mode)
+
+;; Remove trailing newlines and spaces
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
