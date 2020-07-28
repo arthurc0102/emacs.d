@@ -21,7 +21,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (material-theme nord-theme))))
+ '(package-selected-packages
+   (quote
+    (py-yapf elpy ein magit company-lsp lsp-ui lsp-mode auto-complete flycheck autopair multiple-cursors iedit editorconfig use-package popup nord-theme better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
