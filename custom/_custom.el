@@ -24,6 +24,7 @@
 (setq-default indent-tabs-mode nil)
 
 ;; Flycheck
+(require 'flycheck)
 (global-flycheck-mode)
 
 ;; Remove trailing newlines and spaces
