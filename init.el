@@ -15,14 +15,6 @@
 (load "_lsp.el")
 (load "_python.el")
 
-;;
-;; (load "_multiple-cursors.el")
-;; (load "_lisp.el")
-;; (load "_ruby.el")
-;; (load "_go.el")
-;; (load "_typescript.el")
-;;
-
 ;; Generate by emacs, don't change it!
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
