@@ -15,8 +15,8 @@
   (define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
   (add-hook 'elpy-mode-hook 'flycheck-mode))
 
-;; (require 'py-yapf)
-;; (add-hook 'python-mode-hook 'py-yapf-enable-on-save)
+(require 'py-yapf)
+(add-hook 'python-mode-hook 'py-yapf-enable-on-save)
 
 (defun python-shell-parse-command ()
   "Return the string used to execute the inferior Python process."
