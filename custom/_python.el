@@ -1,4 +1,5 @@
 (add-hook 'python-mode-hook #'lsp-deferred)
+(setq lsp-pyls-server-command "~/.pyenv/shims/pyls")
 (setq lsp-pyls-plugins-pycodestyle-enabled nil)
 (setq lsp-pyls-plugins-pyflakes-enabled nil)
 (setq lsp-pyls-plugins-autopep8-enabled nil)
