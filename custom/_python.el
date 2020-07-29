@@ -1,5 +1,4 @@
 (add-hook 'python-mode-hook #'lsp-deferred)
-(setq lsp-pyls-server-command "~/.emacs.d/language-server/python/env/bin/pyls")
 (setq lsp-pyls-plugins-pycodestyle-enabled nil)
 (setq lsp-pyls-plugins-pyflakes-enabled nil)
 (setq lsp-pyls-plugins-autopep8-enabled nil)
