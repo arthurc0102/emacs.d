@@ -9,7 +9,7 @@
 (toggle-frame-maximized)
 
 ;; Font setting
-(set-default-font "Cascadia Code PL 12")
+(set-frame-font "Cascadia Code PL 12")
 
 ;; Hide the startup message
 (setq inhibit-startup-message t)
