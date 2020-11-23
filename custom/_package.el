@@ -30,7 +30,8 @@
     company-lsp  ;; Company completion backend for lsp-mode
 
     ;; Tools
-    magit  ;; Git
+    magit    ;; Git
+    neotree  ;; Tree view
 
     ;; --- Python ---
     ein      ;; iPython

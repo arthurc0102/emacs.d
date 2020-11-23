@@ -14,3 +14,6 @@
 (global-set-key (kbd "<f5>") (fset 'work-window
    "\C-x2\C-xo\C-x2\C-x0\C-xo")
 )
+
+;; Neotree
+(global-set-key (kbd "C-x p") 'neotree-toggle)
