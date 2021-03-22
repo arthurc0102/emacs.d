@@ -20,7 +20,6 @@
     ;; --- For edit ---
     iedit             ;; Edit same word in same time with select word and type C-o
     multiple-cursors  ;; Edit multiple same word with selected
-    autopair          ;; Auto quote pair. ex: type ", auto input ""
     flycheck          ;; Error check
     auto-complete     ;; Auto complete mode for any language
 
