@@ -27,7 +27,7 @@
     ;; Language server
     lsp-mode     ;; Language server mode
     lsp-ui       ;; UI integrations for lsp-mode
-    company-lsp  ;; Company completion backend for lsp-mode
+    company      ;; Company completion
 
     ;; Tools
     magit    ;; Git

@@ -17,6 +17,7 @@
 (load "_highlight-indentation.el")
 (load "_lsp.el")
 (load "_python.el")
+(load "_company.el")
 
 ;; Generate by emacs, don't change it!
 (custom-set-variables
