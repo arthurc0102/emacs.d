@@ -7,4 +7,6 @@
 
 (setq lsp-enable-snippet nil)
 (setq lsp-ui-flycheck-enable t)
+(setq lsp-headerline-breadcrumb-enable nil)
+
 (add-hook 'lsp-mode-hook 'lsp-ui-mode)
