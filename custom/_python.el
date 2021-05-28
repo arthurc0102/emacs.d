@@ -1,10 +1,15 @@
 (add-hook 'python-mode-hook #'lsp-deferred)
-(setq lsp-pyls-server-command "~/.pyenv/shims/pyls")
+(setq lsp-pyls-server-command "~/.emacs.d/language-server/pyls-venv/bin/pyls")
 (setq lsp-pyls-plugins-pycodestyle-enabled nil)
 (setq lsp-pyls-plugins-pyflakes-enabled nil)
 (setq lsp-pyls-plugins-autopep8-enabled nil)
 (setq lsp-pyls-plugins-yapf-enabled t)
 (setq lsp-pyls-plugins-flake8-enabled t)
+
+(with-eval-after-load 'lsp-mode
+  (lsp-register-custom-settings
+  '(("pyls.plugins.pyls_mypy.enabled" t t)
+    ("pyls.plugins.pyls_mypy.live_mode" nil t))))
 
 (elpy-enable)
 
@@ -15,8 +20,8 @@
   (define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
   (add-hook 'elpy-mode-hook 'flycheck-mode))
 
-(require 'py-yapf)
-(add-hook 'python-mode-hook 'py-yapf-enable-on-save)
+;; (require 'py-yapf)
+;; (add-hook 'python-mode-hook 'py-yapf-enable-on-save)
 
 (defun python-shell-parse-command ()
   "Return the string used to execute the inferior Python process."

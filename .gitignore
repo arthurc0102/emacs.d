@@ -1,7 +1,6 @@
 .lsp-session-v1
 
-/language-server/*
-!/language-server/setup.sh
+/language-server/*-venv
 
 /transient
 /snippets
