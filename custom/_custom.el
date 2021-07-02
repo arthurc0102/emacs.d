@@ -15,7 +15,7 @@
 (setq inhibit-startup-message t)
 
 ;; Theme settings
-(load-theme 'nord t)
+(load-theme 'dracula t)
 
 ;; Editor
 (global-linum-mode 1)

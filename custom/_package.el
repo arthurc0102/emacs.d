@@ -12,7 +12,7 @@
   '(
     ;; --- For emacs ---
     better-defaults  ;; Some defaults
-    nord-theme       ;; Theme
+    dracula-theme    ;; Theme
     popup            ;; Let Emacs show popup. The API for company packages
     use-package      ;; For apply any package with config
     editorconfig     ;; Let emacs support editor config file (.editorconfig)
