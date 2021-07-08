@@ -23,12 +23,12 @@
     flycheck          ;; Error check
     auto-complete     ;; Auto complete mode for any language
 
-    ;; Language server
+    ;; --- Language server ---
     lsp-mode     ;; Language server mode
     lsp-ui       ;; UI integrations for lsp-mode
     company      ;; Company completion
 
-    ;; Tools
+    ;; -- Tools ---
     magit    ;; Git
     neotree  ;; Tree view
 
@@ -36,6 +36,9 @@
     ein      ;; iPython
     elpy     ;; Emacs Python Development Environment.
     py-yapf  ;; Yapf support
+
+    ;; --- Yaml ---
+    yaml-mode
     ))
 
 (mapc #'(lambda (package)
