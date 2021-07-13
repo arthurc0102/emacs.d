@@ -9,7 +9,7 @@ source $VENV_PATH/bin/activate
 $INSTALL_CMD pip setuptools
 
 # Pyls
-$INSTALL_CMD python-language-server[yapf]
+$INSTALL_CMD 'python-lsp-server[all]'
 
 # pyls-mypy
-$INSTALL_CMD pyls-mypy future  # Install `future` to fix a bug: https://github.com/tomv564/pyls-mypy/issues/37
+$INSTALL_CMD pylsp-mypy
