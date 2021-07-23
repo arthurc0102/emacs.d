@@ -39,6 +39,9 @@
 
     ;; --- Yaml ---
     yaml-mode
+
+    ;; --- Docker ---
+    dockerfile-mode
     ))
 
 (mapc #'(lambda (package)
