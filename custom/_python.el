@@ -1,16 +1,11 @@
 (add-hook 'python-mode-hook #'lsp-deferred)
 
-;; (setq lsp-pyls-server-command "~/.emacs.d/language-server/pyls-venv/bin/pyls")
-(setq lsp-pyls-plugins-pycodestyle-enabled nil)
-(setq lsp-pyls-plugins-pyflakes-enabled nil)
-(setq lsp-pyls-plugins-autopep8-enabled nil)
-(setq lsp-pyls-plugins-yapf-enabled t)
-(setq lsp-pyls-plugins-flake8-enabled t)
+(setq lsp-pylsp-plugins-pydocstyle-enabled nil)
 
 (with-eval-after-load 'lsp-mode
   (lsp-register-custom-settings
-  '(("pyls.plugins.pyls_mypy.enabled" t t)
-    ("pyls.plugins.pyls_mypy.live_mode" nil t))))
+  '(("pylsp.plugins.pylsp_mypy.enabled" t)
+    ("pylsp.plugins.pylsp_mypy.overrides" ["--follow-imports=silent" "--ignore-missing-imports" "--show-column-numbers"]))))
 
 (elpy-enable)
 
