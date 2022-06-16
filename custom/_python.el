@@ -5,7 +5,7 @@
 (with-eval-after-load 'lsp-mode
   (lsp-register-custom-settings
   '(("pylsp.plugins.pylsp_mypy.enabled" t)
-    ("pylsp.plugins.pylsp_mypy.overrides" ["--follow-imports=silent" "--ignore-missing-imports" "--show-column-numbers"]))))
+    ("pylsp.plugins.pylsp_mypy.overrides" ["--follow-imports=silent" "--ignore-missing-imports" "--show-column-numbers" t]))))
 
 (elpy-enable)
 
