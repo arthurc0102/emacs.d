@@ -33,4 +33,3 @@
 
 ;; Ruff
 (setq lsp-ruff-lsp-server-command '("~/.emacs.d/.venvs/ruff-lsp/bin/ruff-lsp"))
-(setq lsp-ruff-lsp-ruff-path ["ruff" "~/.emacs.d/.venvs/ruff-lsp/bin/ruff"])
