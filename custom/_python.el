@@ -1,11 +1,8 @@
-(add-hook 'python-mode-hook #'lsp-deferred)
-
-(setq lsp-pylsp-plugins-pydocstyle-enabled nil)
-
-(with-eval-after-load 'lsp-mode
-  (lsp-register-custom-settings
-  '(("pylsp.plugins.pylsp_mypy.enabled" t)
-    ("pylsp.plugins.pylsp_mypy.overrides" ["--follow-imports=silent" "--ignore-missing-imports" "--show-column-numbers" t]))))
+(use-package lsp-pyright
+  :ensure t
+  :hook (python-mode . (lambda ()
+                          (require 'lsp-pyright)
+                          (lsp-deferred))))
 
 (elpy-enable)
 
@@ -16,9 +13,6 @@
   (define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
   (add-hook 'elpy-mode-hook 'flycheck-mode))
 
-;; (require 'py-yapf)
-;; (add-hook 'python-mode-hook 'py-yapf-enable-on-save)
-
 (defun python-shell-parse-command ()
   "Return the string used to execute the inferior Python process."
   "python -i")
@@ -27,3 +21,16 @@
       python-shell-interpreter-args "-i")
 
 (setq python-shell-completion-native-enable nil)
+
+;; Use black to format code
+(setq elpy-formatter "black")
+
+;; C-c C-r x to autoformat code
+(define-key elpy-refactor-map (kbd "x")
+  (cons (format "%sormat code"
+                (propertize "f" 'face 'bold))
+        'elpy-format-code))
+
+;; Ruff
+(setq lsp-ruff-lsp-server-command '("~/.emacs.d/.venvs/ruff-lsp/bin/ruff-lsp"))
+(setq lsp-ruff-lsp-ruff-path ["ruff" "~/.emacs.d/.venvs/ruff-lsp/bin/ruff"])

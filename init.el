@@ -26,7 +26,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(py-yapf elpy ein magit company-lsp lsp-ui lsp-mode auto-complete flycheck autopair multiple-cursors iedit editorconfig use-package popup nord-theme better-defaults)))
+   '(elpy ein magit company-lsp lsp-ui lsp-mode auto-complete flycheck autopair multiple-cursors iedit editorconfig use-package popup dracula-theme better-defaults yaml-mode neotree lsp-pyright dockerfile-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

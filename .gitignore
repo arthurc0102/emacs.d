@@ -1,6 +1,6 @@
 .lsp-session-v1
 
-/language-server/*-venv
+/.venvs
 
 /transient
 /snippets

@@ -18,7 +18,7 @@
 (load-theme 'dracula t)
 
 ;; Editor
-(global-linum-mode 1)
+(global-display-line-numbers-mode 1)
 (setq linum-format "%d ")  ;; Add space after line number
 (setq auto-save-default nil)
 (setq-default indent-tabs-mode nil)

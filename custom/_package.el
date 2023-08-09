@@ -1,7 +1,6 @@
 (require 'package)
 
-(add-to-list 'package-archives
-       '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
 (package-initialize)
 
@@ -35,7 +34,6 @@
     ;; --- Python ---
     ein      ;; iPython
     elpy     ;; Emacs Python Development Environment.
-    py-yapf  ;; Yapf support
 
     ;; --- Yaml ---
     yaml-mode
