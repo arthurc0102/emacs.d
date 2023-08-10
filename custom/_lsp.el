@@ -8,5 +8,6 @@
 (setq lsp-enable-snippet nil)
 (setq lsp-ui-flycheck-enable t)
 (setq lsp-headerline-breadcrumb-enable nil)
+(setq lsp-keymap-prefix "C-c l")
 
 (add-hook 'lsp-mode-hook 'lsp-ui-mode)

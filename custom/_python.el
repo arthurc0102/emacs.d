@@ -26,6 +26,11 @@
 (setq elpy-formatter "black")
 
 ;; C-c C-r x to autoformat code
+(define-key elpy-refactor-map (kbd "o")
+  (cons (format "%srganize imports"
+                (propertize "o" 'face 'bold))
+        'lsp-organize-imports))
+
 (define-key elpy-refactor-map (kbd "x")
   (cons (format "%sormat code"
                 (propertize "f" 'face 'bold))
